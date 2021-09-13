@@ -6,3 +6,9 @@ sync-data:
 	
 install:
 	pip install -r requirements.txt
+	
+train:
+	python3 code/training.py
+
+download-data:
+	aws s3 cp s3://moritz-sklearn-sagemaker/titanic.csv data/titanic.csv
