@@ -12,3 +12,6 @@ train:
 
 download-data:
 	aws s3 cp s3://moritz-sklearn-sagemaker/titanic.csv data/titanic.csv
+	
+build-image:
+	docker build -t moritz-img .
